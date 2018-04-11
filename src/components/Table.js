@@ -11,7 +11,7 @@ class Table extends Component {
     };
   }
 
-  handleChangedCell = ({ X, Y }, value) => {
+  handleChangedCell = ({ x, y }, value) => {
     const modifiedData = Object.assign({}, this.state.data);
     if (!modifiedData[y]) modifiedData[y] = {};
     modifiedData[y][x] = value;
