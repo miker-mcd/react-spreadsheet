@@ -17,14 +17,15 @@ const Row = props => {
       />
     );
   }
+  console.log(props.x);
   return <div>{cells}</div>;
 };
 
 Row.propTypes = {
   handleChangedCell: PropTypes.func.isRequired,
   updateCells: PropTypes.func.isRequired,
-  x: PropTypes.num.isRequired,
-  y: PropTypes.num.isRequired,
+  // x: PropTypes.num.isRequired,
+  // y: PropTypes.num.isRequired,
   rowData: PropTypes.shape({
     string: PropTypes.string
   }).isRequired
